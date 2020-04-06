@@ -111,6 +111,6 @@ view: site_traffic {
 
   measure: contact_us_pageviews_conversion_rate {
     type: number
-    sql: ${contact_us_pageviews} / ${total_pageviews} ;;
+    sql: 100 * ${contact_us_pageviews} / ${total_pageviews} ;;
   }
 }
