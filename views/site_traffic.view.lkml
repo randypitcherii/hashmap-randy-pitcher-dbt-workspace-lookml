@@ -18,6 +18,11 @@ view: site_traffic {
     sql: ${TABLE}."COUNTRY" ;;
   }
 
+  dimension: country_city {
+    type: string
+    sql: concat(${country}, '/', ${city}) ;;
+  }
+
   dimension_group: date {
     type: time
     timeframes: [
