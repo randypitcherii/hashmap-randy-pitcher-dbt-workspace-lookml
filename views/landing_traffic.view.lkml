@@ -112,4 +112,9 @@ view: landing_traffic{
     type: sum
     sql: ${TABLE}."PAGEVIEWS" ;;
   }
+
+  measure: contact_us_pageviews_conversion_rate {
+    type: number
+    sql: ${contact_us_pageviews} / ${total_pageviews} ;;
+  }
 }

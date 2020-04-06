@@ -15,8 +15,6 @@ explore: landing_traffic {}
 
 explore: site_traffic {}
 
-explore: all_traffic {}
-
 explore: traffic_by_interest_affinity_category {}
 
 explore: traffic_by_interest_in_market_category {}
