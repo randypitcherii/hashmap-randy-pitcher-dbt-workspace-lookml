@@ -6,6 +6,7 @@ view: traffic_by_interest_in_market_category {
     timeframes: [
       raw,
       date,
+      day_of_week,
       week,
       month,
       quarter,

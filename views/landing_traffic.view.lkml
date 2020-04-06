@@ -22,6 +22,7 @@ view: landing_traffic{
     timeframes: [
       raw,
       date,
+      day_of_week,
       week,
       month,
       quarter,
@@ -39,6 +40,7 @@ view: landing_traffic{
       time,
       hour,
       date,
+      day_of_week,
       week,
       month,
       quarter,

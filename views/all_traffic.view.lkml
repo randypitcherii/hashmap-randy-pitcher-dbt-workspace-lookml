@@ -38,6 +38,7 @@ view: all_traffic {
     timeframes: [
       raw,
       date,
+      day_of_week,
       week,
       month,
       quarter,
@@ -55,6 +56,7 @@ view: all_traffic {
       time,
       hour,
       date,
+      day_of_week,
       week,
       month,
       quarter,

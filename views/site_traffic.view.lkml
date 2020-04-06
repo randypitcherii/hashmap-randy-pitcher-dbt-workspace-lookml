@@ -23,6 +23,7 @@ view: site_traffic {
     timeframes: [
       raw,
       date,
+      day_of_week,
       week,
       month,
       quarter,
@@ -40,6 +41,7 @@ view: site_traffic {
       hour,
       time,
       date,
+      day_of_week,
       week,
       month,
       quarter,
