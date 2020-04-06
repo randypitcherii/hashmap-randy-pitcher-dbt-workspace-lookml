@@ -37,6 +37,7 @@ view: site_traffic {
     type: time
     timeframes: [
       raw,
+      hour,
       time,
       date,
       week,

@@ -37,6 +37,7 @@ view: landing_traffic{
     timeframes: [
       raw,
       time,
+      hour,
       date,
       week,
       month,

@@ -53,6 +53,7 @@ view: all_traffic {
     timeframes: [
       raw,
       time,
+      hour,
       date,
       week,
       month,
