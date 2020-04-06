@@ -1,4 +1,5 @@
 connection: "hashmap_aws_snowflake_instance"
+label: "1 - Google Analytics"
 
 # include all the views
 include: "/views/**/*.view"
