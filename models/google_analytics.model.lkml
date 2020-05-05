@@ -1,8 +1,8 @@
 connection: "hashmap_aws_snowflake_instance"
-label: "1 - Google Analytics"
+label: "2 - Google Analytics"
 
 # include all the views
-include: "/views/**/*.view"
+include: "/views/google_analytics/*.view"
 
 datagroup: google_analytics_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
