@@ -10,7 +10,18 @@ datagroup: cloud_usage_default_datagroup {
 
 persist_with: cloud_usage_default_datagroup
 
-explore: hashmap_aws_costs {}
-explore: hashmap_azure_costs {}
-explore: snowflake_warehouse_metering_history{}
-explore: hashmap_cloud_costs {}
+explore: hashmap_aws_costs {
+  label: "AWS Costs"
+}
+
+explore: hashmap_azure_costs {
+  label: "Azure Costs"
+}
+
+explore: snowflake_warehouse_metering_history{
+  label: "Snowflake Compute Costs"
+}
+
+explore: hashmap_cloud_costs {
+  label: "Combined Cloud Costs"
+}
