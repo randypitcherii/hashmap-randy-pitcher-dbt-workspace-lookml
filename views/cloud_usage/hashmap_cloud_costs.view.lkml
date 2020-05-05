@@ -1,4 +1,7 @@
 view: hashmap_cloud_costs {
+
+  label: "Combined Cloud Costs"
+
   sql_table_name: "ANALYTICS"."HASHMAP_CLOUD_COSTS"
     ;;
 
@@ -27,7 +30,7 @@ view: hashmap_cloud_costs {
   }
 
   measure: cost {
-    type: number
+    type: sum
     value_format: "$0.00"
     sql: ${TABLE}."COST_IN_USD" ;;
   }

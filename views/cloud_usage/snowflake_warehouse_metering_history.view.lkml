@@ -1,4 +1,7 @@
 view: snowflake_warehouse_metering_history {
+
+  label: "Snowflake Compute Costs"
+
   sql_table_name: "ANALYTICS"."SNOWFLAKE_WAREHOUSE_METERING_HISTORY"
     ;;
 
@@ -32,7 +35,7 @@ view: snowflake_warehouse_metering_history {
   }
 
   measure: cost {
-    type: number
+    type: sum
     value_format: "$0.00"
     sql: 3 * ${TABLE}."CREDITS_USED" ;;
   }

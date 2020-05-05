@@ -1,4 +1,7 @@
 view: hashmap_azure_costs {
+
+  label: "Azure Costs"
+
   sql_table_name: "ANALYTICS"."HASHMAP_AZURE_COSTS";;
 
   dimension_group: date {
@@ -47,7 +50,7 @@ view: hashmap_azure_costs {
   }
 
   measure: cost {
-    type: number
+    type: sum
     value_format: "$0.00"
     sql: ${TABLE}."COST_IN_USD" ;;
   }

@@ -1,4 +1,7 @@
 view: hashmap_aws_costs {
+
+  label: "AWS Costs"
+
   sql_table_name: "ANALYTICS"."HASHMAP_AWS_COSTS"
     ;;
 
@@ -57,7 +60,7 @@ view: hashmap_aws_costs {
   }
 
   measure: cost {
-    type: number
+    type: sum
     value_format: "$0.00"
     sql: ${TABLE}."COST" ;;
   }
