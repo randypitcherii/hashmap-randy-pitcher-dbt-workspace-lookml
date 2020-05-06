@@ -41,7 +41,7 @@ view: hashmap_azure_costs {
 
   dimension: tags {
     type: string
-    sql: ${TABLE}."TAGS" ;;
+    sql: HASH(${TABLE}."TAGS") ;;
   }
 
   measure: count {
