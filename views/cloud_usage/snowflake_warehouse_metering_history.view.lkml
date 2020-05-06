@@ -36,7 +36,7 @@ view: snowflake_warehouse_metering_history {
 
   measure: cost {
     type: sum
-    value_format: "$0.00"
+    value_format: "$#,##0.00"
     sql: 3 * ${TABLE}."CREDITS_USED" ;;
   }
 }

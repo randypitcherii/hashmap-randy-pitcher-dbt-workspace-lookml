@@ -51,7 +51,7 @@ view: hashmap_azure_costs {
 
   measure: cost {
     type: sum
-    value_format: "$0.00"
+    value_format: "$#,##0.00"
     sql: ${TABLE}."COST_IN_USD" ;;
   }
 }

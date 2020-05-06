@@ -61,7 +61,7 @@ view: hashmap_aws_costs {
 
   measure: cost {
     type: sum
-    value_format: "$0.00"
+    value_format: "$#,##0.00"
     sql: ${TABLE}."COST" ;;
   }
 }

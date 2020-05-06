@@ -31,7 +31,7 @@ view: hashmap_cloud_costs {
 
   measure: cost {
     type: sum
-    value_format: "$0.00"
-    sql: ${TABLE}."COST_IN_USD" ;;
+    value_format: "$#,##0.00"
+    sql: ${TABLE}."COST" ;;
   }
 }
