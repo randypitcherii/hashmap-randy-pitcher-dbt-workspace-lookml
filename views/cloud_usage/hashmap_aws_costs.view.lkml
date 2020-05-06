@@ -27,7 +27,7 @@ view: hashmap_aws_costs {
 
   dimension: resource_id {
     type: string
-    sql: ${TABLE}."RESOURCE_ID" ;;
+    sql: HASH(${TABLE}."RESOURCE_ID") ;;
   }
 
   dimension: service {
@@ -63,5 +63,11 @@ view: hashmap_aws_costs {
     type: sum
     value_format: "$#,##0.00"
     sql: ${TABLE}."COST" ;;
+  }
+
+  measure: running_total_of_cost {
+    type: running_total
+    value_format: "$#,##0.00"
+    sql: ${cost} ;;
   }
 }

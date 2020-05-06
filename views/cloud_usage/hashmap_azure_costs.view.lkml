@@ -31,7 +31,7 @@ view: hashmap_azure_costs {
 
   dimension: resource_group {
     type: string
-    sql: ${TABLE}."RESOURCE_GROUP" ;;
+    sql: HASH(${TABLE}."RESOURCE_GROUP") ;;
   }
 
   dimension: service_family {
@@ -53,5 +53,11 @@ view: hashmap_azure_costs {
     type: sum
     value_format: "$#,##0.00"
     sql: ${TABLE}."COST_IN_USD" ;;
+  }
+
+  measure: running_total_of_cost {
+    type: running_total
+    value_format: "$#,##0.00"
+    sql: ${cost} ;;
   }
 }
