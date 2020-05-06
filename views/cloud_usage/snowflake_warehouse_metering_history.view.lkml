@@ -39,4 +39,10 @@ view: snowflake_warehouse_metering_history {
     value_format: "$#,##0.00"
     sql: 3 * ${TABLE}."CREDITS_USED" ;;
   }
+
+  measure: running_total_of_cost {
+    type: running_total
+    value_format: "$#,##0.00"
+    sql: ${cost} ;;
+  }
 }
