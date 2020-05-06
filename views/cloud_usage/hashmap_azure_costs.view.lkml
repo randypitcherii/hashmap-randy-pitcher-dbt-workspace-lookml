@@ -21,7 +21,7 @@ view: hashmap_azure_costs {
 
   dimension: instance_id {
     type: string
-    sql: ${TABLE}."INSTANCE_ID" ;;
+    sql: HASH(${TABLE}."INSTANCE_ID") ;;
   }
 
   dimension: location {
