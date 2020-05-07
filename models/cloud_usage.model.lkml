@@ -22,6 +22,10 @@ explore: snowflake_warehouse_metering_history{
   label: "Snowflake Compute Costs"
 }
 
+explore: task_usage_history{
+  label: "Snowflake Task Usage History"
+}
+
 explore: hashmap_cloud_costs {
   label: "Combined Cloud Costs"
 }
