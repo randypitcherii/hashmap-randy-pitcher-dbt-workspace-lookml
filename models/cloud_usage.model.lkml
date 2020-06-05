@@ -14,6 +14,7 @@ explore: hashmap_aws_costs {
   label: "AWS Costs"
 }
 
+
 explore: hashmap_azure_costs {
   label: "Azure Costs"
 }
