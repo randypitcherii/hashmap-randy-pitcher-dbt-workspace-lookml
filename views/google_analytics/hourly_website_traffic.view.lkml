@@ -63,7 +63,8 @@ view: hourly_website_traffic {
 
   measure: traffic_session_duration_avg {
     type: average
-    sql: ${TABLE}."TRAFFIC_SESSION_DURATION_AVG" ;;
+    sql: ${TABLE}."TRAFFIC_SESSION_DURATION_AVG"/60 ;;
+    value_format: "#.## \m\i\n"
   }
 
   measure: traffic_new_users_cnt {
