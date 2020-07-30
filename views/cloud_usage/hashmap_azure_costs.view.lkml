@@ -2,7 +2,7 @@ view: hashmap_azure_costs {
 
   label: "Azure Costs"
 
-  sql_table_name: "ANALYTICS"."HASHMAP_AZURE_COSTS";;
+  sql_table_name: "CLOUD_USAGE"."HASHMAP_AZURE_COSTS";;
 
   dimension_group: date {
     type: time
@@ -21,7 +21,7 @@ view: hashmap_azure_costs {
 
   dimension: instance_id {
     type: string
-    sql: HASH(${TABLE}."INSTANCE_ID") ;;
+    sql: ${TABLE}."INSTANCE_ID" ;;
   }
 
   dimension: location {
@@ -31,7 +31,7 @@ view: hashmap_azure_costs {
 
   dimension: resource_group {
     type: string
-    sql: HASH(${TABLE}."RESOURCE_GROUP") ;;
+    sql: ${TABLE}."RESOURCE_GROUP" ;;
   }
 
   dimension: service_family {
@@ -41,7 +41,7 @@ view: hashmap_azure_costs {
 
   dimension: tags {
     type: string
-    sql: HASH(${TABLE}."TAGS") ;;
+    sql: ${TABLE}."TAGS" ;;
   }
 
   measure: count {

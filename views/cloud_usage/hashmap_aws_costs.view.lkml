@@ -2,7 +2,7 @@ view: hashmap_aws_costs {
 
   label: "AWS Costs"
 
-  sql_table_name: "ANALYTICS"."HASHMAP_AWS_COSTS"
+  sql_table_name: "CLOUD_USAGE"."HASHMAP_AWS_COSTS"
     ;;
 
   dimension: account_id {
@@ -27,7 +27,7 @@ view: hashmap_aws_costs {
 
   dimension: resource_id {
     type: string
-    sql: HASH(${TABLE}."RESOURCE_ID") ;;
+    sql: ${TABLE}."RESOURCE_ID" ;;
   }
 
   dimension: service {

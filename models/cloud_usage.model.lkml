@@ -1,5 +1,5 @@
 connection: "hashmap_aws_snowflake_instance"
-label: "1 - Hashmap Cloud Usage"
+label: "Hashmap Cloud Usage"
 
 include: "/views/cloud_usage/*.view.lkml"
 

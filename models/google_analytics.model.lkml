@@ -1,5 +1,5 @@
 connection: "hashmap_aws_snowflake_instance"
-label: "2 - Google Analytics"
+label: "Google Analytics"
 
 # include all the views
 include: "/views/google_analytics/*.view"
@@ -11,10 +11,4 @@ datagroup: google_analytics_default_datagroup {
 
 persist_with: google_analytics_default_datagroup
 
-explore: landing_traffic {}
-
-explore: site_traffic {}
-
-explore: traffic_by_interest_affinity_category {}
-
-explore: traffic_by_interest_in_market_category {}
+explore: hourly_website_traffic {}

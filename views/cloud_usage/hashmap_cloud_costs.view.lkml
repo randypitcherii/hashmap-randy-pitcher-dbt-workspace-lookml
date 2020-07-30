@@ -2,7 +2,7 @@ view: hashmap_cloud_costs {
 
   label: "Combined Cloud Costs"
 
-  sql_table_name: "ANALYTICS"."HASHMAP_CLOUD_COSTS"
+  sql_table_name: "CLOUD_USAGE"."HASHMAP_CLOUD_COSTS"
     ;;
 
   dimension: cloud {

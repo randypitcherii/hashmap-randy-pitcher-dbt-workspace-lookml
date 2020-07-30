@@ -2,7 +2,7 @@ view: snowflake_warehouse_metering_history {
 
   label: "Snowflake Compute Costs"
 
-  sql_table_name: "ANALYTICS"."SNOWFLAKE_WAREHOUSE_METERING_HISTORY"
+  sql_table_name: "CLOUD_USAGE"."SNOWFLAKE_WAREHOUSE_METERING_HISTORY"
     ;;
 
   dimension_group: start_time_central {

@@ -1,5 +1,5 @@
 view: task_usage_history {
-  sql_table_name: "ANALYTICS"."TASK_USAGE_HISTORY"
+  sql_table_name: "CLOUD_USAGE"."TASK_USAGE_HISTORY"
     ;;
 
   dimension_group: completed {
